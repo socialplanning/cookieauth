@@ -35,7 +35,7 @@ def _user_dict(name):
                 roles = 'Authenticated ProjectMember'.split(),
                 )
 
-from cookieauth.lib import usermapper
+import usermapper
 
 import httplib2
 import elementtree.ElementTree as ET
