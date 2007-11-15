@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+cookieauth/__init__.py
+cookieauth/cookieauth.py
+cookieauth/usermapper.py
+cookieauth.egg-info/PKG-INFO
+cookieauth.egg-info/SOURCES.txt
+cookieauth.egg-info/dependency_links.txt
+cookieauth.egg-info/entry_points.txt
+cookieauth.egg-info/not-zip-safe
+cookieauth.egg-info/paster_plugins.txt
+cookieauth.egg-info/requires.txt
+cookieauth.egg-info/top_level.txt
