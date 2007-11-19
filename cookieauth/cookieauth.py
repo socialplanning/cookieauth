@@ -214,7 +214,7 @@ class CookieAuth(object):
             if status.startswith('401'):
                 status = "303 See Other"
                 url = construct_url(environ)
-                headers = [('Location', '%s?came_from=%s' % (self.login_uri, quote(url)))]
+                headers = [('Location', '%s?came_from=%s' % (self.login_uri, quote(url))), ('Content-Type', 'text/html')]
                 start_response(status, headers)
                 return []
             elif status.startswith('403'):
