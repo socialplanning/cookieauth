@@ -200,7 +200,7 @@ class CookieAuth(object):
             environ['topp.project_members'] = umapper = UserMapper(environ, project_name,
                                                                    self.openplans_instance,
                                                                    self.admin_info, self.profile_uri)
-            if username in umapper.project_member_names():
+            if username.lower() in (x.lower() for x in umapper.project_member_names()):
                 environ['topp.user_info']['roles'].extend(umapper.project_member_roles(username))
 
             try:
