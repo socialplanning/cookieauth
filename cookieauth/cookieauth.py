@@ -220,7 +220,7 @@ class CookieAuth(object):
             elif status.startswith('403'):
                 status = "303 See Other"
                 url = construct_url(environ)
-                headers = [('Location', '%s?portal_status_message=You+have+insufficient+privileges.' % self.homepage_uri)]
+                headers = [('Location', '%s?portal_status_message=You+have+insufficient+privileges.' % self.homepage_uri), ('Content-Type', 'text/html')]
                 start_response(status, headers)
             return []        
         else:
