@@ -19,7 +19,8 @@ setup(name='cookieauth',
       zip_safe=False,
       install_requires=[
            'topp.utils',
-           'ElementTree'
+           'ElementTree',
+           'httplib2',
       ],
       entry_points="""
       # -*- Entry points: -*-
