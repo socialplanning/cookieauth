@@ -21,6 +21,7 @@ setup(name='cookieauth',
            'topp.utils',
            'ElementTree',
            'httplib2',
+           'paste',
       ],
       entry_points="""
       # -*- Entry points: -*-
